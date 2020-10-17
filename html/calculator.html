@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script type="text/javascript" src="../js/calculator.js"></script>
+
+  <link rel="stylesheet" href="../css/calculator.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <div class="card">
+    <h1 class="card-header">Calculator</h1>
+    <div class="card-body">
+      <h5 class="card-title">Calculator for two numbers</h5>
+      <p class="card-text">Enter a number in each box and press the operator.</p>
+
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <form class="" name="calcform">
+            Number 1: <input type="text" name="num1" value="" class="form-control" />
+            Number 2: <input type="text" name="num2" value="" class="form-control" />
+            Result: <input type="text" name="result" value="" class="form-control" /><br/>
+            <input type="button" name="Add" value="+" onclick="calculate(this)" class="btn btn-primary boton" />
+            <input type="button" name="Sub" value="-" onclick="calculate(this)" class="btn btn-info boton" />
+            <input type="button" name="Mul" value="x" onclick="calculate(this)" class="btn btn-success boton" />
+            <input type="button" name="Div" value="/" onclick="calculate(this)" class="btn btn-danger boton" />
+            <input type="button" name="Mod" value="%" onclick="calculate(this)" class="btn btn-warning boton" />
+          </form>
+        </div>
+      </div>
+      <br/>
+      <a href="home.html" class="btn btn-dark">Return</a>
+    </div>
+  </div>
+</body>
+
+</html>

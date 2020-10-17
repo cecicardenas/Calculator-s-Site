@@ -1,0 +1,7 @@
+body {
+    font-family: 'Alef', sans-serif;
+    position: relative;
+    /*background-image: url("../img/fondo2.png");*/
+    height: 100%; /* You must set a specified height */
+    width: 100%;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script type="text/javascript" src="../js/bmi.js"></script>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <div class="card">
+    <h1 class="card-header">Calculator</h1>
+    <div class="card-body">
+      <h5 class="card-title">Calculate your BMI</h5>
+      <p class="card-text">Enter your weight in kilograms and your height in meters.</p>
+
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <form class="" name="calcform">
+            Kilograms: <input type="text" name="num1" value="" class="form-control" />
+            Meters: <input type="text" name="num2" value="" class="form-control" />
+            BMI: <input type="text" name="result" value="" class="form-control" /><br/>
+            <input type="button" name="BMI" value="BMI" onclick="calculate(this)" class="btn btn-primary" />
+          </form>
+        </div>
+      </div>
+      <br/>
+      <a href="home.html" class="btn btn-dark">Return</a>
+    </div>
+  </div>
+</body>
+
+</html>
