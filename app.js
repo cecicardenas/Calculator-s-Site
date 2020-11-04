@@ -17,7 +17,7 @@ app.post("/", function(req, res) {
   var email = req.body.email;
   var password = req.body.password;
   var exp1 = /^\w+([\.-]?\w+)*@(?:|hotmail|outlook|yahoo|live|gmail)\.(?:|com|es)+$/.test(email);
-  var exp2 = /^\w[^...]{5,8}$/.test(password);
+  var exp2 = /^\w[^...]{8,14}$/.test(password);
 
   if (!exp1 || !exp2){
     res.sendFile(__dirname + "/html/failure.html");
