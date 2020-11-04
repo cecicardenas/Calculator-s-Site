@@ -16,14 +16,13 @@ app.get("/", function(req, res) {
 app.post("/", function(req, res) {
   var email = req.body.email;
   var password = req.body.password;
+  var exp1 = /^\w+([\.-]?\w+)*@(?:|hotmail|outlook|yahoo|live|gmail)\.(?:|com|es)+$/.test(email);
+  var exp2 = /^\w[^...]{5,8}$/.test(password);
 
-
-  if (/^\w+([\.-]?\w+)*@(?:|hotmail|outlook|yahoo|live|gmail)\.(?:|com|es)+$/.test(email)){
-    //alert("Validation Successfull");
-    res.sendFile(__dirname + "/html/home.html");
-    //res.send(true);
-  } else  {
+  if (!exp1 || !exp2){
     res.sendFile(__dirname + "/html/failure.html");
+  } else {
+    res.sendFile(__dirname + "/html/home.html");
   }
 });
 
